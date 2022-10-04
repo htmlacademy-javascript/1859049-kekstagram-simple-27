@@ -1,13 +1,12 @@
 function getRandomArbitrary(min, max) {
-  if (min<0 || max<0 || max<=min) {
+  if (min < 0 || max < 0 || max <= min) {
     return NaN;
   }
-  let b = Math.random() * (max - min) + min;
-  return b;
+  return Math.random() * (max - min) + min;
 }
 
 function LenghtStr(str, maxlenght) {
-  if (str.lenght<=maxlenght) {
+  if (str.lenght <= maxlenght) {
     return true;
   }
   else {
