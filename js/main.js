@@ -1,15 +1,17 @@
-function getRandomArbitrary(min, max) {
+function getRandomNumber(min, max) {
   if (min < 0 || max < 0 || max <= min) {
     return NaN;
   }
   return Math.random() * (max - min) + min;
 }
 
-function LenghtStr(str, maxlenght) {
-  if (str.lenght <= maxlenght) {
+function checkStringLength(str, maxLenght) {
+  if (str.Lenght <= maxLenght) {
     return true;
   }
-  else {
-    return false;
-  }
+  return false;
 }
+
+getRandomNumber(1, 10);
+checkStringLength('Фотографии других пользователей', 20);
+
